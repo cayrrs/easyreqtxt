@@ -1,0 +1,3 @@
+[INFO] Test run started
+[INFO] All tests passed
+[WARNING] Deprecation notice: helpers.safe_request will change signature in v2

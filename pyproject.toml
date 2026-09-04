@@ -1,0 +1,13 @@
+[project]
+name = "easyreqtxt"
+version = "0.1.0"
+description = "Easily make requirements.txt files for entire python projects."
+readme = "README.md"
+requires-python = ">=3.14"
+
+[project.scripts]
+easyreqtxt = "easyreqtxt.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

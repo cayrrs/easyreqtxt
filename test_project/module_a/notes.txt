@@ -1,0 +1,3 @@
+TODO: refactor api_client.py to use httpx instead of requests
+TODO: add retry logic to fetch_page
+import requests  <- this line should NOT be picked up, it's inside a .txt file
