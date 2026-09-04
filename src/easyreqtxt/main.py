@@ -55,6 +55,8 @@ def walkfile(filepath: Path):
                 logger.info(f"Found {nm} in {filename}")
         else:
             if isinstance(node, ast.ImportFrom):
+                if node.level > 0 or node.module is None:
+                    continue
                 name = node.module.split(".")[0]
                 if name in module_names:
                     continue
